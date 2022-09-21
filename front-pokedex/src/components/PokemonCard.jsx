@@ -10,8 +10,8 @@ function PokemonCard( { pokemon } ) {
     useEffect(() => {
         axios.get(`http://localhost:3000/${id}/`).then(({data}) => {
             setPokemonDescription(data.data.pokemon.sprites)
-            console.log(data.data)
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
   return (

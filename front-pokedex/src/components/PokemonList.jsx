@@ -11,7 +11,6 @@ function PokemonList() {
     useEffect(() => {
         axios.get('http://localhost:3000/').then(({data}) => {
             setPokemons(data.data.pokemon.results)
-            console.log(data.data.pokemon.results)
         })
     }, []);
     

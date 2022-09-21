@@ -16,7 +16,6 @@ function PokemonDescription() {
           )
           .then((response) => {
             setOnePokemon(response.data.data.pokemon)
-            console.log(response.data.data.pokemon);
           })
           .catch((err) => {
             console.error(err);
